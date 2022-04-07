@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --darkBlue: rgb(31, 38, 50);
+  --darkGrayishblue: rgb(50, 58, 73);
+  --grayishBlue: rgb(78, 93, 115);
+  --cyan: rgb(206, 227, 233);
+  --neonGreen: rgb(82, 255, 168);
+}
+
+body {
+  background-color: var(--darkBlue);
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  max-width: 1440px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container {
+  border-radius: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px;
+  width: 600px;
+  height: 400px;
+  background-color: var(--darkGrayishblue);
+}
+
+main .container .title {
+  color: var(--neonGreen);
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+
+main .container .description {
+  color: var(--cyan);
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  height: 120px;
+}
+
+main .container .divider .mobile-divider {
+  display: none;
+}
+
+main .container .divider .desktop-divider {
+  display: block;
+}
+
+main .container .btn-container {
+  width: 100%;
+  position: relative;
+}
+
+main .container .dice {
+  border-radius: 50%;
+  background-color: var(--neonGreen);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 32px);
+}
+
+main .container .dice:hover {
+  -webkit-box-shadow: 0px 0px 20px 4px var(--neonGreen);
+          box-shadow: 0px 0px 20px 4px var(--neonGreen);
+}
+
+main .container .dice:active {
+  -webkit-box-shadow: 0px 0px 20px 12px var(--neonGreen);
+          box-shadow: 0px 0px 20px 12px var(--neonGreen);
+}
+
+main .container .tweet-btn {
+  border-radius: 35px;
+  background-color: #e1e8ed;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: -72px;
+}
+
+main .container .tweet-btn img {
+  width: 36px;
+}
+
+main .container .tweet-btn span {
+  max-width: 0;
+  font-weight: 800;
+  color: #1da1f2;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+main .container .tweet-btn:hover {
+  border-radius: 35px;
+  -webkit-box-shadow: 0px 0px 20px 4px #e1e8ed;
+          box-shadow: 0px 0px 20px 4px #e1e8ed;
+}
+
+main .container .tweet-btn:hover span {
+  max-width: 7rem;
+  margin-left: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+}
+
+footer .footer-text {
+  color: var(--cyan);
+}
+
+footer .footer-text a {
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  main .container {
+    width: 90%;
+  }
+  main .container .title {
+    font-size: 14px;
+  }
+  main .container .description {
+    font-size: 22px;
+  }
+  main .container .divider .mobile-divider {
+    display: block !important;
+  }
+  main .container .divider .desktop-divider {
+    display: none !important;
+  }
+}
+
+@media (max-width: 380px) {
+  main {
+    width: 100%;
+  }
+  main .container {
+    width: 90%;
+  }
+  main .container .title {
+    font-size: 12px;
+  }
+  main .container .description {
+    font-size: 20px;
+  }
+  main .container .divider .mobile-divider {
+    width: 250px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Advice Generator App</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="title" id="title"></div>
+        <div class="description" id="description"></div>
+        <div class="divider">
+          <img
+            class="desktop-divider"
+            src="./images/pattern-divider-desktop.svg"
+            alt="Divider"
+          />
+          <img
+            class="mobile-divider"
+            src="./images/pattern-divider-mobile.svg"
+            alt="Divider Mobile"
+          />
+        </div>
+        <div class="btn-container">
+          <div class="dice" id="dice-btn" onclick="getRandomAdvice()">
+            <img src="./images/icon-dice.svg" alt="Dice" />
+          </div>
+          <div class="tweet-btn" onclick="shareViaTwitter()">
+            <img src="./images/icon-twitter.svg" alt="" Twitter />
+            <span>Tweet it!</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-text">
+        <a href="" target="_blank">Frontend Mentor </a> |
+        <a href="https://github.com/Szqii" target="_blank">Sezgi</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
