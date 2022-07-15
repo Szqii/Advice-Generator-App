@@ -16,7 +16,7 @@ function updateText(id, advice) {
 
 function shareViaTwitter() {
   let text = `Check out this awesome advice generator app 👉🏼 https://some-advice.netlify.app/`;
-  let credit = `Made with ❤️ by @devsezgi`;
+  let credit = `Made with ❤️ by @sezgiwtf`;
   const url = `https://twitter.com/intent/tweet?text=${descEl.innerHTML}%0a%0a%0a${text}%0a${credit}`;
   window.open(url, "_blank");
 }
